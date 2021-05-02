@@ -248,7 +248,7 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../dist/img/logo.png" class="user-image" alt="User Image"/>
+                  <img src="../images/logo.png" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">ATA admin</span>
                 </a>
                 <ul class="dropdown-menu">

@@ -61,7 +61,7 @@
                       <li><!-- start message -->
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                            <img src="../images/logo.png" class="img-circle" alt="User Image"/>
                           </div>
                           <h4>
                             Support Team
@@ -73,7 +73,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="../images/logo.png" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             AdminLTE Design Team
@@ -85,7 +85,7 @@
                       <li>
                         <a href="#">
                           <div class="pull-left">
-                            <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
+                            <img src="../images/logo.png" class="img-circle" alt="user image"/>
                           </div>
                           <h4>
                             Developers
@@ -238,7 +238,7 @@
               <!-- User Account: style can be found in dropdown.less -->
               <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../dist/img/logo.png" class="user-image" alt="User Image"/>
+                  <img src="../images/logo.png" class="user-image" alt="User Image"/>
                   <span class="hidden-xs">ATA admin</span>
                 </a>
              
@@ -254,7 +254,7 @@
           <!-- Sidebar user panel -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="../dist/img/logo.png" class="img-circle" alt="User Image" />
+              <img src="../images/logo.png" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
               <p>ATA admin</p>

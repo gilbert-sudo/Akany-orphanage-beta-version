@@ -29,7 +29,7 @@
 		<div class="container-login100">
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt align="center">
-					<img src="images/logo.PNG" alt="IMG">
+					<img src="images/logo.png" alt="IMG">
 
 				</div>
 
