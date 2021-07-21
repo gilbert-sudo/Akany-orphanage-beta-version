@@ -4,7 +4,8 @@
     <title>Akany TAFITA - Stories</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
+    <link rel="stylesheet" href="css/stories.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css">
 
     <link rel="stylesheet" href="css/aos.css">
+
 
     <link rel="stylesheet" href="css/ionicons.min.css">
     
@@ -54,7 +56,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate pb-5 text-center">
-            <h1 class="mb-3 bread">Our <span>Stories</span></h1>
+            <h1 class="mb-3 bread">Notre <span>Histoire</span></h1>
             <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span class="mr-2"><a href="blog.html">Blog <i class="ion-ios-arrow-forward"></i></a></span> <span>Blog Single <i class="ion-ios-arrow-forward"></i></span></p>
           </div>
         </div>
@@ -66,29 +68,42 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 ftco-animate">
-            <h2 class="mb-3">It is a long established fact a reader be distracted</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
+            <h2 class="mb-3">FONDATIONS</h2>
+            <p>Akany Tafita, aussi appelé « ATA », a été fondé par un comité personnes dans l’église Anglicane à Madagascar dont le but est de partager l’amour de Dieu en aidant les personnes dans le besoin, en particulier les enfants, mais aussi leurs familles. ATA est situé dans un quartier très pauvre de la ville d'Antananarivo. Il a commencé ces bonnes œuvres en octobre 2002.
+			</br>Il est dépendant de l’église Anglicane à Madagascar.
+			</p>
             <p>
               <img src="images/image_3.jpg" alt="" class="img-fluid">
             </p>
-            <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
-            <h2 class="mb-3 mt-5">#2. Creative WordPress Themes</h2>
-            <p>Temporibus ad error suscipit exercitationem hic molestiae totam obcaecati rerum, eius aut, in. Exercitationem atque quidem tempora maiores ex architecto voluptatum aut officia doloremque. Error dolore voluptas, omnis molestias odio dignissimos culpa ex earum nisi consequatur quos odit quasi repellat qui officiis reiciendis incidunt hic non? Debitis commodi aut, adipisci.</p>
+            <h2 class="mb-3 mt-5">NOTRE MISSION</h2>
+            <h4 class="mb-3">« Une école qui offre de la vie et de l’espoir aux enfants d'Antananarivo »</h4>
             <p>
               <img src="images/image_4.jpg" alt="" class="img-fluid">
             </p>
-            <p>Quisquam esse aliquam fuga distinctio, quidem delectus veritatis reiciendis. Nihil explicabo quod, est eos ipsum. Unde aut non tenetur tempore, nisi culpa voluptate maiores officiis quis vel ab consectetur suscipit veritatis nulla quos quia aspernatur perferendis, libero sint. Error, velit, porro. Deserunt minus, quibusdam iste enim veniam, modi rem maiores.</p>
-            <p>Odit voluptatibus, eveniet vel nihil cum ullam dolores laborum, quo velit commodi rerum eum quidem pariatur! Quia fuga iste tenetur, ipsa vel nisi in dolorum consequatur, veritatis porro explicabo soluta commodi libero voluptatem similique id quidem? Blanditiis voluptates aperiam non magni. Reprehenderit nobis odit inventore, quia laboriosam harum excepturi ea.</p>
-            <p>Adipisci vero culpa, eius nobis soluta. Dolore, maxime ullam ipsam quidem, dolor distinctio similique asperiores voluptas enim, exercitationem ratione aut adipisci modi quod quibusdam iusto, voluptates beatae iure nemo itaque laborum. Consequuntur et pariatur totam fuga eligendi vero dolorum provident. Voluptatibus, veritatis. Beatae numquam nam ab voluptatibus culpa, tenetur recusandae!</p>
-            <p>Voluptas dolores dignissimos dolorum temporibus, autem aliquam ducimus at officia adipisci quasi nemo a perspiciatis provident magni laboriosam repudiandae iure iusto commodi debitis est blanditiis alias laborum sint dolore. Dolores, iure, reprehenderit. Error provident, pariatur cupiditate soluta doloremque aut ratione. Harum voluptates mollitia illo minus praesentium, rerum ipsa debitis, inventore?</p>
-            <div class="tag-widget post-tag-container mb-5 mt-5">
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">Life</a>
-                <a href="#" class="tag-cloud-link">Sport</a>
-                <a href="#" class="tag-cloud-link">Tech</a>
-                <a href="#" class="tag-cloud-link">Travel</a>
-              </div>
-            </div>
+            <p>Nous fournissons une éducation, de la nourriture et des vêtements aux enfants. Et si nécessaire, des soins primaires et des traitements sont également fournis en donnant des vitamines et une consultation médicale dans certains cas.</p>
+            <p>Après l'éducation de base, certains des enfants choisissent de poursuivre leurs études supérieures ou de poursuivre une formation professionnelle.</p>
+            <p>En 2016, ATA a pu proposer une formation «sérigraphie» aux garçons. En plus des cours de cuisine et de couture, les filles ont appris à utiliser la machine à coudre industrielle.</p>
+            <p>Il donne aussi des supports parentaux et offre des cours de cuisine pour les mères de famille.</p>
+
+            <h2 class="mb-3 mt-5">CONDITIONS D’ACCUEIL DES ENFANTS</h2>
+            <h5 class="mb-3">L’Akany reçoit des enfants selon les critères suivants :</h5>
+            <ul class="my-4">
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Famille nombreuse : plus de cinq (5) personnes dans un foyer</li>
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Orphelin et monoparental</li>
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Dans les environs d’Anosibe, Paraky et Ambohijanahary</li>
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Famille les plus pauvres des pauvres</li>
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Enfants déscolarisé (+11 ans)</li>
+              </ul>
+            <p>Effectifs total : 75.</p>
+            <h2 class="mb-3">TYPES D’ENSEIGNEMENT ACTUEL</h2>
+            <p>ASAMA : Enseignement générale
+			</br>Alphabétisation
+			</br>Atelier pour les jeunes : les garçons plus âgés apprennent le métier et les compétences de vie, les filles plus âgées acquièrent des compétences en couture et en machines.
+			</p>
+            <p>
+              <img src="images/image_3.jpg" alt="" class="img-fluid">
+            </p>
+            <p>75 enfants sont désormais scolarisés et nourris.</p>
 
 
             <div class="pt-5 mt-5">
@@ -131,12 +146,12 @@
               </form>
             </div>
             <div class="sidebar-box ftco-animate">
-            	<h3 class="heading-sidebar">Categories</h3>
+            	<h2 class="heading-sidebar">NOTRE CONTACT</h2>
               <ul class="categories">
-                <li><a href="#">Fitness Gym <span>(12)</span></a></li>
-                <li><a href="#">Crossfit <span>(22)</span></a></li>
-                <li><a href="#">Yoga <span>(37)</span></a></li>
-                <li><a href="#">aerobics <span>(42)</span></a></li>
+                <li><p> Adresse bureau <br><span>AKANY TAFITA/SAHASOA <br> Lot III T 267 AB <br> ANOSIBE ANGARANGARANA</span></p></li>
+                <li><p> Téléphone <br><span>034 24 215 30 <br>032 04 564 06</span></p></li>
+                <li><p>Adresse E-mail <br><span>ravoniarisoa@freenet.mg</span></p></li>
+                <li><p>Page Facebook  <br><span>AKANY TAFITA SAHASOA</span></p></li>
               </ul>
             </div>
 
@@ -177,23 +192,15 @@
               </div>
             </div>
 
+
             <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Tag Cloud</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link">gym</a>
-                <a href="#" class="tag-cloud-link">pain</a>
-                <a href="#" class="tag-cloud-link">workhard</a>
-                <a href="#" class="tag-cloud-link">glory</a>
-                <a href="#" class="tag-cloud-link">table</a>
-                <a href="#" class="tag-cloud-link">interior</a>
-                <a href="#" class="tag-cloud-link">exterior</a>
-                <a href="#" class="tag-cloud-link">industrial</a>
-              </div>
+              <h3 class="heading-sidebar">NOTRE DEVISE</h3>
+              <p>Jacques 2:26 </br>« Car comme le corps sans esprit est mort, ainsi aussi la foi sans les œuvres est morte. »</p>
             </div>
 
             <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Paragraph</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+              <h3 class="heading-sidebar">SERVICES</h3>
+              <p>ATA fait aussi du travail de collecte de fond  en louant une grande salle où des formations ou des événements peuvent avoir lieu. Il possède aussi quelques appartements à louer.</p>
             </div>
           </div>
 

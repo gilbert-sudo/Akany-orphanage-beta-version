@@ -34,10 +34,11 @@
     <![endif]-->
   </head>
   <body class="skin-blue">
+     <?php include '../php/profil.php'; ?>
     <div class="wrapper">
       
-      <header class="main-header">
-        <a href="#" class="logo"><b>ATA admin</b></a>
+<header class="main-header">
+        <a href="#" class="logo"><b><?= $showprofil['username_admin']; ?></b></a>
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
           <!-- Sidebar toggle button-->
@@ -55,225 +56,30 @@
                   <i class="fa fa-envelope-o"></i>
                   <span class="label label-success">4</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 4 messages</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- start message -->
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
-                          </div>
-                          <h4>
-                            Support Team
-                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li><!-- end message -->
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            AdminLTE Design Team
-                            <small><i class="fa fa-clock-o"></i> 2 hours</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Developers
-                            <small><i class="fa fa-clock-o"></i> Today</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Sales Department
-                            <small><i class="fa fa-clock-o"></i> Yesterday</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <div class="pull-left">
-                            <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="user image"/>
-                          </div>
-                          <h4>
-                            Reviewers
-                            <small><i class="fa fa-clock-o"></i> 2 days</small>
-                          </h4>
-                          <p>Why not buy a new awesome theme?</p>
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">See All Messages</a></li>
-                </ul>
+               
               </li>
-              <!-- Notifications: style can be found in dropdown.less -->
+           
               <li class="dropdown notifications-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-bell-o"></i>
                   <span class="label label-warning">10</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 10 notifications</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the page and may cause design problems
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-users text-red"></i> 5 new members joined
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-shopping-cart text-green"></i> 25 sales made
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i class="fa fa-user text-red"></i> You changed your username
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
+              
               </li>
-              <!-- Tasks: style can be found in dropdown.less -->
               <li class="dropdown tasks-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <i class="fa fa-flag-o"></i>
                   <span class="label label-danger">9</span>
                 </a>
-                <ul class="dropdown-menu">
-                  <li class="header">You have 9 tasks</li>
-                  <li>
-                    <!-- inner menu: contains the actual data -->
-                    <ul class="menu">
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Design some buttons
-                            <small class="pull-right">20%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">20% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Create a nice theme
-                            <small class="pull-right">40%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">40% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Some task I need to do
-                            <small class="pull-right">60%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">60% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                      <li><!-- Task item -->
-                        <a href="#">
-                          <h3>
-                            Make beautiful transitions
-                            <small class="pull-right">80%</small>
-                          </h3>
-                          <div class="progress xs">
-                            <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                              <span class="sr-only">80% Complete</span>
-                            </div>
-                          </div>
-                        </a>
-                      </li><!-- end task item -->
-                    </ul>
-                  </li>
-                  <li class="footer">
-                    <a href="#">View all tasks</a>
-                  </li>
-                </ul>
+                
               </li>
-              <!-- User Account: style can be found in dropdown.less -->
-                <li class="dropdown user user-menu">
+            
+              <li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <img src="../dist/img/logo.png" class="user-image" alt="User Image"/>
-                  <span class="hidden-xs">ATA admin</span>
+                  <img src="../images/admin/<?= $showprofil['image_admin']; ?>" class="user-image" alt="User Image"/>
+                  <span class="hidden-xs"><?= $showprofil['username_admin']; ?></span>
                 </a>
-                <ul class="dropdown-menu">
-                  <!-- User image -->
-                  <li class="user-header">
-                    <img src="../dist/img/.jpg" class="img-circle" alt="User Image" />
-                    <p>
-                      Alexander Pierce - Web Developer
-                      <small>Member since Nov. 2012</small>
-                    </p>
-                  </li>
-                  <!-- Menu Body -->
-                  <li class="user-body">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Sales</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </li>
-                  <!-- Menu Footer-->
-                  <li class="user-footer">
-                    <div class="pull-left">
-                      <a href="#" class="btn btn-default btn-flat">Profile</a>
-                    </div>
-                    <div class="pull-right">
-                      <a href="../php/logout.php" class="btn btn-default btn-flat">Sign out</a>
-                    </div>
-                  </li>
-                </ul>
+             
               </li>
             </ul>
           </div>
@@ -284,12 +90,12 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
           <!-- Sidebar user panel -->
-          <div class="user-panel">
+           <div class="user-panel">
             <div class="pull-left image">
-              <img src="../dist/img/logo.png" class="img-circle" alt="User Image" />
+              <img src="../images/admin/<?= $showprofil['image_admin']; ?>" class="img-circle" alt="User Image" />
             </div>
             <div class="pull-left info">
-              <p>ATA admin</p>
+              <p><?= $showprofil['username_admin']; ?></p>
 
               <a href="#"><i class="fa fa-circle text-success"></i> En ligne</a>
             </div>
@@ -305,59 +111,86 @@
             </li>
 
             <li class="treeview">
-              <a href="ad_responsable.php">
-                <i class="fa fa-user"></i> <span>Ajouter un responsable</span>
-            
+              <a href="#">
+                <i class="glyphicon glyphicon-folder-close"></i>
+                <span>Gestion des responsables</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
-            
+              <ul class="treeview-menu">
+                <li><a href="ad_responsable.php"><i class="fa fa-user"></i>Ajouter une responsable</a></li>
+                <li><a href="gerer_resp.php"><i class= "fa fa-group"></i>Gérer les responsables</a></li>
+              </ul>
+            </li>
+
+            <li class="treeview">
+              <a href="#">
+                <i class="glyphicon glyphicon-folder-close"></i>
+                <span>Gestion des événements</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="ad_event.php"><i class="fa fa-globe"></i>Ajouter un évènement</a></li>
+                <li><a href="gerer_event.php"><i class= "fa fa-star"></i>Gérer les évenénements</a></li>
+              </ul>
+            </li>
+             
+              <li class="treeview">
+              <a href="#">
+                <i class="glyphicon glyphicon-folder-close"></i>
+                <span>Gestion des dons</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="demande_dons.php"><i class="fa fa-bullhorn"></i> Demmande des dons</a></li>
+                <li><a href="gerer_dons.php"><i class= "fa fa-cogs"></i>Gérer les dons</a></li>
+              </ul>
+            </li>
+
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-users"></i>
+                <span>Gestion des temoignages</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="ad_witness.php"><i class="glyphicon glyphicon-user"></i> Ajouter des témoignages</a></li>
+                <li><a href="gerer_temoignage.php"><i class= "glyphicon glyphicon-folder-close"></i>Gérer les témoignages</a></li>
+              </ul>
             </li>
             <li class="treeview">
-              <a href="ad_event.php">
-                <i class="fa fa-globe"></i> <span>Ajouter un évènement</span>
+              <a href="#">
+                <i class="fa fa-file"></i>
+                <span>Gestion des blogs</span>
+                <i class="fa fa-angle-left pull-right"></i>
               </a>
-              
+              <ul class="treeview-menu">
+                <li><a href="ad_blog.php"><i class="fa fa-file-text-o"></i>Ajouter un blog</a></li>
+                <li><a href="gerer_blog.php"><i class= "fa fa-file-text"></i>Gérer les blogs</a></li>
+              </ul>
             </li>
           
-          
-            <li class="treeview">
-              <a href="demande_dons.php">
-                <i class="fa fa-bullhorn"></i> <span>Demmande des dons</span>
-                
-              </a>
-            
-            </li>
-            <li class="treeview">
-              <a href="gerer_resp.php">
-                <i class="fa fa-group"></i> <span>Gérer les responsables</span>
-                
-              </a>
-            
-            </li>
-            <li class="treeview">
-              <a href="gerer_event.php">
-                <i class="fa fa-star"></i> <span>Gérer les évenénements</span>
-                
-              </a>
-            
-            </li>
-            <li class="treeview">
-              <a href="gerer_dons.php">
-                <i class="fa fa-cogs"></i> <span>Gérer les dons</span>
-                
-              </a>
-            
-            </li>
            <li class="treeview">
-              <a href="ad_photo.php">
-                <i class="fa fa-picture-o"></i> <span>Gallerie</span>
-              </a>
-              
-            </li>
-            <li>
               <a href="mailbox/mailbox.php">
-                <i class="fa fa-envelope"></i> <span>Mailbox</span>
+                <i class="fa fa-envelope"></i> <span>Boîte E-mail</span>
                 <small class="label pull-right bg-yellow">12</small>
               </a>
+            </li>
+            <li class="treeview">
+              <a href="update_contact.php">
+                <i class="fa fa-pencil-square-o"></i> <span>Mise à jour des contacts</span>
+              </a>
+              
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="glyphicon glyphicon-folder-close"></i>
+                <span>Gestion des services</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="ad_service.php"><i class="fa fa-globe"></i>Ajouter service</a></li>
+                <li><a href="gerer_service.php"><i class= "fa fa-star"></i>Gérer les services</a></li>
+              </ul>
             </li>
            <li class="active treeview">
               <a href="#">
@@ -384,7 +217,7 @@
                   <h3 class="box-title"><b>Paramètres</b></h3>
                 
                 <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
               <!-- Default box -->
               <div class="box">
                 <div class="box-header">
@@ -414,12 +247,12 @@
                         if (!empty($_POST['newnom'])) {
                       $newnom = $_POST['newnom'];
                       $newnomlong = strlen($newnom);
-                          if ($newnomlong <= 20) {
+                          if ($newnomlong <= 40) {
              
                           $reqnewname = $bdd->prepare("UPDATE `compte_admin` SET `username_admin` = ?; ");
                           $reqnewname->execute(array($newnom));
 
-                          $msgmaintso2 = "<b>Nom d'utilisateur modifié avec succès✔</b>";
+                          $msgmaintso2 = "<b>Nom d'utilisateur modifié avec succès<i class='fa fa-check-circle'></i></b>";
 
                            }else
                         {
@@ -428,9 +261,26 @@
 
 
                         }
+                       if (isset($_FILES['newimg']['name']) AND !empty($_FILES['newimg']['name'])) {
+
+                    $extensionValide = array('jpg', 'gif', 'jpeg', 'png');
+                    $extensionUpload = strtolower(substr(strrchr($_FILES['newimg']['name'], "."), 1));
+
+                    if (in_array($extensionUpload, $extensionValide)) {
+                  
+                  $chemin = "../images/admin/".$_FILES['newimg']['name'];
+                  $insertimg = move_uploaded_file($_FILES['newimg']['tmp_name'], $chemin);
+        
+                    $newimgadm = $bdd->prepare("UPDATE `compte_admin` SET `image_admin` = ? ");
+                    $newimgadm->execute(array($_FILES['newimg']['name']));
+
+                    $msgmaintso2 = "<b>Photo de profil modifié avec succès<i class='fa fa-check-circle'></i> </b>";
+                 
 
 
                       }
+                    }
+                  }
 
 if (isset($msgmena2)) {
   echo '<font color="red">' .$msgmena2. '</font>';
@@ -438,13 +288,14 @@ if (isset($msgmena2)) {
 if (isset($msgmaintso2)) {
   echo '<font color="green">' .$msgmaintso2. '</font>';
 }
+
                     ?>
                     </form>
                 </div>
                
               </div><!-- /.box -->
             </div>
-               <div class="col-md-4">
+               <div class="col-md-6">
               <!-- Default box -->
               <div class="box">
                 <div class="box-header">
@@ -545,23 +396,6 @@ if (isset($msgmaintso2)) {
                 </div>
               </div><!-- /.box -->
             </div>
-               <div class="col-md-4">
-              <!-- Default box -->
-              <div class="box">
-                <div class="box-header">
-                  <h3 class="box-title">Créer un Admin temporaire</h3>
-               </div>
-                <div class="box-body">
-                  
-               <label>Nom d'utilisateur temporaire</label><br><input type="text" class="form-control" name="" placeholder="Nom d'utilisateur"><br>
-               <label>Mot de passe</label><br><input type="password" class="form-control" name="" placeholder="****************"><br>
-               <label>Confirmer le mot de passe</label><br><input type="password" class="form-control" name="" placeholder="****************"><br>
-               <button class="btn btn-block btn-primary btn-sm" style="width: 100px; margin-top: 45px;">Créer</button>
-
-                </div>
-              </div><!-- /.box -->
-            </div>
-            
             
               </div><!-- /.box -->
              

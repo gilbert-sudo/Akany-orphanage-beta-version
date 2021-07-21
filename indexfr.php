@@ -46,7 +46,6 @@ session_start();
 	          <li class="nav-item"><a href="#events-section" class="nav-link"><span>Evènements</span></a></li>
 	          <li class="nav-item"><a href="#causes-section" class="nav-link"><span>Causes</span></a></li>
 	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blogs</span></a></li>
-	          <li class="nav-item"><a href="#pastor-section" class="nav-link"><span>résponsables</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
             <li style="margin-top: 5px;"> <a data-toggle="modal" data-target="#myModal" href="#" style="color: #ffc107;"> <span>Langue</span> <img src="images/flagfr.png" alt="" /> </a> </li>
           </ul>
@@ -85,8 +84,8 @@ session_start();
 	          		<div class="subheading">
 	          			<span>Akany Tafita/Sahasoa</span>
 	          		</div>
-		            <h1 class="mb-4"> so also faith without <span>actions</span> is dead </h1>
-		            <p>The king will reply, 'I tell you, whenever you did this for one of the least important of these members of my family, you did this for me!'</p>
+		           
+		            <h1 class="mb-4"> Car le corps sans l'<span>esprit</span> est mort,</h1>
 		            <p><a href="#contact-section" class="btn btn-primary py-2 px-4">Contactez-nous</a> <a href="story.php" class="btn btn-primary btn-outline-primary py-2 px-4">en-savoir plus</a></p>
 	            </div>
 	          </div>
@@ -104,8 +103,9 @@ session_start();
 	          		<div class="subheading">
 	          			<span>Akany Tafita/Sahasoa</span>
 	          		</div>
-		            <h1 class="mb-4"> as body without the <span>spirit</span> is dead,</h1>
-		            <p>The king will reply, 'I tell you, whenever you did this for one of the least important of these members of my family, you did this for me!'</p>
+                <h1 class="mb-4"> ainsi aussi, la foi sans <span>actiont</span> est morte.</h1>
+		            
+		          
 		            <p><a href="#contact-section" class="btn btn-primary py-2 px-4">Contactez-nous</a> <a href="story.php" class="btn btn-primary btn-outline-primary py-2 px-4">en-savoir plus</a></p>
 	            </div>
 	          </div>
@@ -129,7 +129,7 @@ session_start();
               <ul class="my-4">
               	<li><span class="ion-ios-checkmark-circle mr-2"></span> Ameliorer la condition de vie des familles</li>
               	<li><span class="ion-ios-checkmark-circle mr-2"></span> Venir en aide aux enfant et jeunes nécessiteux</li>
-              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Contribuer à l'éducation des enfants et jeunes Malagasy</li>
+              	<li><span class="ion-ios-checkmark-circle mr-2"></span> Contribute to the education of children and young Malagasies</li>
               </ul>
             </div>
 					</div>
@@ -228,7 +228,7 @@ session_start();
           </div>
           <div class="col-md d-flex align-self-stretch ftco-animate">
             <div class="media block-6 services text-center d-block">
-              <div class="icon"><span class="flaticon-church"></span></div>
+              <div class="icon"><span class="flaticon-social-care"></span></div>
               <div class="media-body">
                 <h3 class="heading mb-3">Community Helpers</h3>
                 <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
@@ -543,49 +543,6 @@ session_start();
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb" id="pastor-section">
-    	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-6 heading-section text-center ftco-animate">
-          	<span class="subheading">Résponsables</span>
-            <h2 class="mb-4">Les résponsables de l'Akany</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-          </div>
-        </div>
-        <div class="row">
-
-        <?php include 'Admin/php/connexion.php';
-             $reqleaders = $bdd->prepare("SELECT * FROM responsable");
-              $reqleaders->execute();
-          while ($showleaders = $reqleaders->fetch()) {?>
-          <!-- one leader -->
-          <div class="col-md-6 col-lg-3 ftco-animate">
-            <div class="staff">
-              <div class="img-wrap d-flex align-items-stretch">
-                <div class="img align-self-stretch" style="background-image: url(images/<?=$showleaders['image'];?>);"></div>
-              </div>
-              <div class="text d-flex align-items-center pt-3 text-center">
-                <div>
-                  <h3 class="mb-2"><?=$showleaders['nom_resp'];?> <?=$showleaders['prenom_resp'];?></h3>
-                  <span class="position mb-4"><?=$showleaders['fonction'];?></span>
-                  <div class="faded">
-                    <ul class="ftco-social text-center">
-                      <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                      <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                      <li class="ftco-animate"><a href="#"><span class="icon-google-plus"></span></a></li>
-                      <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- end one leader -->
-            <?php } ?>
-				</div>
-    	</div>
-    </section>
-
     <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
       <div class="container">
       	<div class="row justify-content-center mb-5 pb-3">
@@ -690,7 +647,7 @@ session_start();
         </div>
     		<div class="row">
 					<div class="col-md-3 ftco-animate">
-						<a href="images/gallery-1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
+						<a href="images/gallery_1.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-1.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
     						<span class="icon-instagram"></span>
     					</div>
@@ -710,7 +667,6 @@ session_start();
     					</div>
 						</a>
 					</div>
-
 					<div class="col-md-3 ftco-animate">
 						<a href="images/gallery-4.jpg" class="gallery image-popup img d-flex align-items-center" style="background-image: url(images/gallery-4.jpg);">
 							<div class="icon mb-4 d-flex align-items-center justify-content-center">
@@ -719,7 +675,6 @@ session_start();
 						</a>
 					</div>
         </div>
-        <p class="mb-0" style="margin-top: 10px; padding-left: 50px;"><a href="gallery.php" class="btn btn-primary">Voir plus de photos &nbsp;&nbsp;<span class="ion-ios-arrow-round-forward"></span></a></p>
     	</div>
     </section>
     <footer class="ftco-footer ftco-bg-dark ftco-section">

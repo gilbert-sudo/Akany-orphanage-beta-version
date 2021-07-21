@@ -16,6 +16,7 @@ if (isset($_POST['connect'])){
 			$userinfo = $reqpassword->fetch();
 			$passwordconnectash =sha1($_POST['passadmin']);
 						if ($userinfo['password_admin'] == $passwordconnectash) {
+							$_SESSION['id'] = $userinfo['id_admin'];
 							
 							header('Location:pages/accueil.php');
 						}

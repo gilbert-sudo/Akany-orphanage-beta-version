@@ -1,3 +1,0 @@
-<?php 
-$bdd = new PDO("mysql:host=sql104.epizy.com;dbname=epiz_28224731_akany","epiz_28224731","eSLzXoUtyIkG8");
-?>
