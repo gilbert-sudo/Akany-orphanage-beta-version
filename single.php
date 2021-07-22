@@ -169,7 +169,7 @@
       </div>
     </section> <!-- .section -->
 
-   <?php include 'footer.php'; ?>
+   <?php include 'footeren.php'; ?>
     
   
 

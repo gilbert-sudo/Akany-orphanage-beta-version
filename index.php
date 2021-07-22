@@ -88,8 +88,8 @@ session_start();
         <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="col-md-8 text-center ftco-animate mt-5">
-              <div class="text">
+            <div class="col-md-8 text-center ftco-animate mt-1">
+              <div class="text" style="margin-top: -98px;">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width: 180px;"></a> 
                 <div class="subheading">
                   <span>Akany Tafita/Sahasoa</span>
@@ -107,8 +107,8 @@ session_start();
         <div class="overlay"></div>
           <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
-            <div class="col-md-8 text-center ftco-animate mt-5">
-              <div class="text">
+            <div class="col-md-8 text-center ftco-animate mt-1">
+              <div class="text" style="margin-top: -98px;">
             <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="" style="width: 180px;"></a> 
                 <div class="subheading">
                   <span>Akany Tafita/Sahasoa</span>
@@ -116,7 +116,7 @@ session_start();
                 
                 <h1 class="mb-4"> so also faith without <span>actions</span> is dead </h1>
                 
-                <p><a href="#contact-section" class="btn btn-primary py-2 px-4">Contact us</a> <a href="story.php" class="btn btn-primary btn-outline-primary py-2 px-4">Read more</a></p>
+                <p><a href="#contact-section" class="btn btn-primary py-2 px-4">Contact us</a> <a href="stories.php" class="btn btn-primary btn-outline-primary py-2 px-4">Read more</a></p>
               </div>
             </div>
           </div>
@@ -558,7 +558,7 @@ session_start();
       </div>
     </section>
   
-   <?php include 'footer.php'; ?>
+   <?php include 'footeren.php'; ?>
     
   
 
