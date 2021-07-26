@@ -13,43 +13,35 @@ var addtomailmsg = document.querySelector(".addtomailmsg");
  		// validation email
  		
 		if (!addtomailname.value) {
-			erreur ="Please enter your name"
+			erreur ="Veuillez renseigner votre nom"
 			if (erreur) {
 				e.preventDefault();
 				document.getElementById('erreur').innerHTML = erreur;
-				addtomailbtn.className = "btn btn-danger py-3 px-5 addtomailbtn";
-				addtomailbtn.value = "Send again";
 				return false;
 			} 
 		}else{
 
 				if (!addtomailemail.value) {
-					erreur ="Please enter an email" 
+					erreur ="Veuillez renseigner un email" 
 					if (erreur) {
 						e.preventDefault();
 						document.getElementById('erreur').innerHTML = erreur;
-						addtomailbtn.className = "btn btn-danger py-3 px-5 addtomailbtn";
-						addtomailbtn.value = "Send again";
 						return false;
 					}
 				}else{
 					if (!addtomailsubject.value) {
-						erreur ="Please enter an object" 
+						erreur ="Veuillez renseigner un object" 
 						if (erreur) {
 							e.preventDefault();
 							document.getElementById('erreur').innerHTML = erreur;
-							addtomailbtn.className = "btn btn-danger py-3 px-5 addtomailbtn";
-							addtomailbtn.value = "Send again";
 							return false;
 							}
 					}else{
 						if (!addtomailmsg.value) {
-							erreur ="Please write your message"
+							erreur ="Veuillez renseigner votre message"
 							if (erreur) {
 								e.preventDefault();
 								document.getElementById('erreur').innerHTML = erreur;
-								addtomailbtn.className = "btn btn-danger py-3 px-5 addtomailbtn";
-								addtomailbtn.value = "Send again";
 								return false;
 							} 
 						} else{
@@ -68,12 +60,17 @@ var addtomailmsg = document.querySelector(".addtomailmsg");
 										addtomailmsg.value = "";
 										addtomailbtn.className = "btn btn-success py-3 px-5 addtomailbtn"
 										addtomailbtn.value = "Send another"
-										alert('Your message has been sent');
+										alert('Votre message a bien été envoyer');
 									}
-								
+									else
+									{
+										alert('Veuillez remplir tous les champs!');
+										addtomailbtn.className = "btn btn-danger py-3 px-5 addtomailbtn"
+										addtomailbtn.value = "Send again"
+									}
 								}else if (this.readyState == 4) {
 									
-									alert('An error has occurred...');
+									alert('une erreurr est survenue...');
 								}
 							};
 							
