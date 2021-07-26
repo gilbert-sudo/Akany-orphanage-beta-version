@@ -434,22 +434,22 @@ session_start();
         <div class="row block-9">
           <div class="col-md-7 order-md-last d-flex">
             
-                <form action="Admin/php/mailbox.php" method="POST" class="bg-light p-4 p-md-5 contact-form " >
+             <form class="bg-light p-4 p-md-5 contact-form addtomail" >
               
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name" name="name">
+                <input type="text" class="form-control addtomailname" placeholder="Your Name" name="name">
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Your Email" name="email">
+                <input type="email" class="form-control addtomailemail" placeholder="Your Email" name="email">
               </div>
               <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject" name="object">
+                <input type="text" class="form-control addtomailsubject" placeholder="Subject" name="objet">
               </div>
               <div class="form-group">
-                <textarea  cols="30" rows="7" class="form-control" placeholder="Message" name="msg"></textarea>
+                <textarea  cols="30" rows="7" class="form-control addtomailmsg" placeholder="Message" name="msg"></textarea>
               </div>
               <div class="form-group">
-                <input type="submit" name="sendmail" value="Send Message" class="btn btn-primary py-3 px-5"><br><br>
+                <input type="submit"  value="Send Message" class="btn btn-primary py-3 px-5 addtomailbtn"><br><br>
                
                 <?php include 'Admin/php/error.php'; ?>
               </div>
