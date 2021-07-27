@@ -38,7 +38,10 @@ session_start();
    
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    
+    <?php 
+    include 'Admin/php/connexion.php';
+    include 'Admin/php/function.php';
+    ?>
     
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target" id="ftco-navbar">
       <div class="container">
@@ -208,7 +211,7 @@ session_start();
           </div>
         </div>
         <div class="row">
-          <?php include 'Admin/php/connexion.php';
+          <?php 
              $reqWitness = $bdd->prepare("SELECT * FROM temoignage");
               $reqWitness->execute();
           while ($showWitness = $reqWitness->fetch()) {?>
@@ -227,7 +230,7 @@ session_start();
                 <h2 class="mb-0"><a href="sermon.html"><?= $showWitness['title'] ?></a></h2>
                 <div class="meta">
                   <p class="mb-0">
-                    <span><?= $showWitness['date_de_publication'] ?></span>
+                    <span><?= dateEn($showWitness['date_de_publication']) ?></span>
                   </p>
                 </div>
               </div>
@@ -255,14 +258,11 @@ session_start();
           </div>
         </div>
         <div class="row">
-        <?php include 'Admin/php/connexion.php';
+        <?php 
+        
              $reqevents = $bdd->prepare("SELECT * FROM ad_event");
-              $reqevents->execute();
+             $reqevents->execute();
           while ($showevents = $reqevents->fetch()) {
-            $vardate = ucfirst(strftime('%b ', strtotime($showevents['date_event'])));
-            $vardate .= ucfirst(strftime('%d, %Y',strtotime($showevents['date_event'])));
-            $vartime = strftime('At %H:%M' , strtotime($showevents['time_event']));
-            $vartime .= strftime(' %p',strtotime($showevents['time_event']));
 
             ?>
           <!--one events  -->
@@ -271,12 +271,12 @@ session_start();
               <div class="img" style="background-image: url(Admin/images/Evenement/<?= $showevents['image'] ?>);"></div>
               <div class="text p-4 d-flex align-items-center">
                 <div>
-                  <span class="time">On <?= $vardate ?></span>
+                  <span class="time">On <?=dateEn($showevents['date_event'])?></span>
                   <h3><a href="#"><?= $showevents['titre_event'] ?></a></h3>
                   <div class="meta">
                     <p class="desc1"><span class="icon-user mr-1"></span> by : <a href="#">Akany Tafita</a></p>
                     <p class="desc2"><span class="icon-location"></span> <?= $showevents['description_event'] ?></p>
-                    <p class="mb-0"><span class="btn btn-primary"><?= $vartime ?></a></span>
+                    <p class="mb-0"><span class="btn btn-primary">At <?= timeEn($showevents['time_event']) ?></a></span>
                   </div>
                 </div>
               </div>
@@ -300,7 +300,7 @@ session_start();
           </div>
         </div>
         <div class="row">
-        <?php include 'Admin/php/connexion.php';
+        <?php 
             
             $reqdons = $bdd->prepare("SELECT * FROM demande_dons");
               $reqdons->execute();
@@ -388,7 +388,7 @@ session_start();
         </div>
         <div class="row d-flex">
 
-           <?php include 'Admin/php/connexion.php';
+           <?php
              $reqblog = $bdd->prepare("SELECT * FROM blog");
               $reqblog->execute();
           while ($showblog = $reqblog->fetch()) {?>
