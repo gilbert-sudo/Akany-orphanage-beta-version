@@ -401,15 +401,15 @@ session_start();
               <div class="text float-right d-block">
                 <div class="d-flex align-items-center pt-2 mb-4 topp">
                   <div class="one mr-2">
-                    <span class="day">04</span>
+                    <span class="day"><?= ucfirst(strftime('%d ', strtotime($showblog['date_de_pub']))); ?></span>
                   </div>
                   <div class="two">
-                    <span class="yr">2019</span>
-                    <span class="mos">June</span>
+                    <span class="yr"><?= ucfirst(strftime('%Y', strtotime($showblog['date_de_pub']))); ?></span>
+                    <span class="mos"><?= ucfirst(strftime('%b', strtotime($showblog['date_de_pub']))); ?></span>
                   </div>
                 </div>
                 <h3 class="heading"><a href="single.php?id_blog=<?= $showblog['id_blog']; ?>"><?= $showblog['object'];?> </a></h3>
-                <p><?= $showblog['contained'];?></p>
+                <p  style="overflow-y: hidden;max-height: 86.4px;min-height: 86.4px;"><?= $showblog['contained'];?></p>
                 <div class="d-flex align-items-center mt-4 meta">
                   <p class="mb-0"><a href="single.php?id_blog=<?= $showblog['id_blog']; ?>" class="btn btn-primary">Read More <span class="ion-ios-arrow-round-forward"></span></a></p>
                   <p class="ml-auto mb-0">

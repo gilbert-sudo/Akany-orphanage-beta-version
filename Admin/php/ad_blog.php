@@ -14,7 +14,7 @@ if (isset($_POST['envoyer'])) {
 				  $photo = 1;
                   $chemin = "../images/Blog/".$_FILES['img']['name'];
                   $insertimg = move_uploaded_file($_FILES['img']['tmp_name'], $chemin);
-            $reqBlog = $bdd->prepare("INSERT INTO `blog` (`id_blog`, `object`, `contained`, `image`, `contained_2`) VALUES (NULL, ?, ?, ?, ?);");
+            $reqBlog = $bdd->prepare("INSERT INTO `blog` (`id_blog`, `object`, `contained`, `image`, `contained_2` , `date_de_pub`) VALUES (NULL, ?, ?, ?, ?, current_timestamp());");
             $reqBlog->execute(array($objet,$contained, $_FILES['img']['name'], $contained_two));
 
             	$msgmaintso = "<b> Blog ajoutée <i class='fa fa-check-circle'></i> </b>";
