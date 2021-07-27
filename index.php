@@ -259,8 +259,8 @@ session_start();
              $reqevents = $bdd->prepare("SELECT * FROM ad_event");
               $reqevents->execute();
           while ($showevents = $reqevents->fetch()) {
-            $vardate = ucfirst(strftime('%d ', strtotime($showevents['date_event'])));
-            $vardate .= ucfirst(strftime('%B %Y',strtotime($showevents['date_event'])));
+            $vardate = ucfirst(strftime('%b ', strtotime($showevents['date_event'])));
+            $vardate .= ucfirst(strftime('%d, %Y',strtotime($showevents['date_event'])));
             $vartime = strftime('At %H:%M' , strtotime($showevents['time_event']));
             $vartime .= strftime(' %p',strtotime($showevents['time_event']));
 
@@ -271,7 +271,7 @@ session_start();
               <div class="img" style="background-image: url(Admin/images/Evenement/<?= $showevents['image'] ?>);"></div>
               <div class="text p-4 d-flex align-items-center">
                 <div>
-                  <span class="time"><?= $vardate ?></span>
+                  <span class="time">On <?= $vardate ?></span>
                   <h3><a href="#"><?= $showevents['titre_event'] ?></a></h3>
                   <div class="meta">
                     <p class="desc1"><span class="icon-user mr-1"></span> by : <a href="#">Akany Tafita</a></p>
