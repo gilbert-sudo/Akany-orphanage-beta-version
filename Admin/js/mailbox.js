@@ -54,6 +54,8 @@ var addtomailmsg = document.querySelector(".addtomailmsg");
 							} 
 						} else{
 
+	
+
 							var data = new FormData(this);
 						 
 							var xhr = new XMLHttpRequest();
@@ -61,6 +63,10 @@ var addtomailmsg = document.querySelector(".addtomailmsg");
 								if (this.readyState == 4 && this.status == 200) {
 									var res = this.response;
 									if (res.success) {
+										erreur = " ";
+										if (erreur) {
+											document.getElementById('erreur').innerHTML = erreur;
+										} 
 										console.log('message bien envoyé !');
 										addtomailemail.value = "";
 										addtomailsubject.value = "";

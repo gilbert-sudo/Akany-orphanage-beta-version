@@ -258,19 +258,25 @@ session_start();
         <?php include 'Admin/php/connexion.php';
              $reqevents = $bdd->prepare("SELECT * FROM ad_event");
               $reqevents->execute();
-          while ($showevents = $reqevents->fetch()) {?>
+          while ($showevents = $reqevents->fetch()) {
+            $vardate = ucfirst(strftime('%d ', strtotime($showevents['date_event'])));
+            $vardate .= ucfirst(strftime('%B %Y',strtotime($showevents['date_event'])));
+            $vartime = strftime('At %H:%M' , strtotime($showevents['time_event']));
+            $vartime .= strftime(' %p',strtotime($showevents['time_event']));
+
+            ?>
           <!--one events  -->
           <div class="col-md-12 col-lg-6 col-xl-4">
             <div class="event-wrap d-flex ftco-animate">
               <div class="img" style="background-image: url(Admin/images/Evenement/<?= $showevents['image'] ?>);"></div>
               <div class="text p-4 d-flex align-items-center">
                 <div>
-                  <span class="time"><?= $showevents['date_event'] ?></span>
+                  <span class="time"><?= $vardate ?></span>
                   <h3><a href="#"><?= $showevents['titre_event'] ?></a></h3>
                   <div class="meta">
                     <p class="desc1"><span class="icon-user mr-1"></span> by : <a href="#">Akany Tafita</a></p>
                     <p class="desc2"><span class="icon-location"></span> <?= $showevents['description_event'] ?></p>
-                    <p class="mb-0"><span class="btn btn-primary"><?= $showevents['time_event'] ?></a></span>
+                    <p class="mb-0"><span class="btn btn-primary"><?= $vartime ?></a></span>
                   </div>
                 </div>
               </div>
